@@ -1,0 +1,33 @@
+<!--miniprogram/pages/settings/settings.wxml-->
+<!-- <text>miniprogram/pages/settings/settings.wxml</text> -->
+<view class="container">
+  <van-panel class="basicInfoPanel" title="基本信息设置" desc="个人与家庭信息" status="{{state}}" use-footer-slot>
+    <van-cell-group>
+  <van-field
+    model:value="{{ name }}"
+    label="用户名"
+    placeholder="请输入真实姓名"
+  />
+  <van-field
+    model:value="{{ familyId }}"
+    label="家庭码"
+    disabled
+    use-button-slot
+  >
+  <van-button slot="button" size="small" type="primary">
+      复制
+    </van-button>
+  </van-field>
+<van-button class="settingsBtn" type="info" disabled >创建家庭</van-button>
+<van-button class="settingsBtn" type="primary" >加入家庭</van-button>
+</van-cell-group>
+  <view slot="footer">
+ 
+  </view>
+</van-panel>
+<view>
+  <!-- <van-button class="settingsBtn">编辑</van-button>
+    <van-button class="settingsBtn">保存</van-button> -->
+</view>
+
+</view>
